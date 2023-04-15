@@ -1,0 +1,68 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpha Numeric</title>
+    </head>
+    <body>
+    <h1>The International Hackathon Registration:</h1>
+    <br>
+    <form onsubmit="register()">
+    <h3>Enter your Registration Number and Submit</h3>
+    <input type="text"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    </body>
+    </html></body>
+        <style>body{
+  
+  
+  
+  
+  
+  
+    background-color:lemonchiffon;
+    color:teal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+h1{
+    background-color:white;
+}
+form{
+    background-color:teal;
+    padding:3px;
+    text-align:left;
+}
+h3{
+    color:white;
+}
+</style>
+        <script>function register(){
+   var a=document.getElementsByTagName("input")[0].value;
+    var i;
+   for(i=0;i<a.length;i++){
+       var c=a.charCodeAt(i)
+       if(c<48){
+       alert("Please enter AlphaNumeric characters");
+break;
+       }
+       else if(c>57 && c<65){
+         alert("Please enter AlphaNumeric characters");
+break;  
+       }
+       else if(c>90 && c<97){
+           alert("Please enter AlphaNumeric characters");
+break;
+       }
+       else if(c>122){
+           alert("Please enter AlphaNumeric characters");
+break;}
+       }
+       if(i==a.length){
+       alert("Number registered");
+       }
+}
+
+</script>
+      </html>
